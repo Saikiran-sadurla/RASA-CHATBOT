@@ -1,0 +1,89 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - predict_college
+  - name_entry
+  - reservation_catogory
+  - rank_entry
+  - preferred_course
+  - top_colleges
+  - top_news
+
+actions:
+  - action_output
+  - action_colleges
+forms:
+  - predict_form
+entities:
+  - name
+  - caste
+  - rank
+  - course
+slots:
+  name:
+    type: unfeaturized
+  caste:
+    type: text
+  rank:
+    type: text
+  course:
+    type: text
+
+responses:
+  utter_greet:
+  - text: "Hey! How is ur Mood"
+
+  utter_cheer_up:
+  - text: "DO SOMETHING THAT'S MAKE TO FEEL HAPPY"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "bye, see you soon"
+
+  utter_iamabot:
+  - text: "I am your ASSISTANT , powered by K.UR.C"
+
+  utter_ask_name:
+  - text: " YOUR NAME PLEASE "
+
+  utter_news:
+  - text: " here we found the updates to u [VISIT]http://www.eamcet.tsche.ac.in/"
+
+  utter_ask_caste:
+  - text : " ENTER YOUR RESERVATION CATEGORY  in caste_sub_sex format , for example: BC_A_BOYS , BC_A_GIRLS "
+
+  utter_wrong_caste:
+  - text: "ENTER CORRECT FORMAT"
+
+  utter_wrong_course:
+    - text: "ENTER CORRECT FORMAT"
+
+  utter_ask_rank:
+  - text : "ENTER YOUR  RANK "
+
+  utter_wrong_rank:
+  - text: " rank is TOO HIGH , you may not get any college"
+
+  utter_ask_course:
+  - text: "ENTER COURSE CODE  "
+
+  utter_submit:
+  - text: " HERE WE GO PREDICTING"
+
+  utter_slots_values:
+  - text: "HERE COMES THE BEST RESULTS ............"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
